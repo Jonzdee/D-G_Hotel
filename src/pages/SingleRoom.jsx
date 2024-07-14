@@ -44,7 +44,7 @@ const SingleRoom = () => {
 
   return (
     <>
-      <StyledHero img={mainImg || defaultBcgImg}>
+      <StyledHero $img={mainImg || defaultBcgImg}>
         <Banner title={`${name} room`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
