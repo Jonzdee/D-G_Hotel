@@ -77,6 +77,7 @@ const SingleRoom = () => {
             <h6>{breakfast && "free breakfast included"}</h6>
           </article>
         </div>
+        
       </section>
 
       <section className="room-extras">

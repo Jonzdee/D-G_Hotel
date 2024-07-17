@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // imports components
 import Services from "../components/services/Service";
 import FeactureRoom from "../components/FeacturedRoom/FeactureRoom";
+import About from '../components/about/About';
 
 function Home() {
   return  (
@@ -13,10 +14,11 @@ function Home() {
     <Banner 
     title='Your Luxury Hotel For Vacation' 
     subtitle='Just Enjoy Relax '> 
-      <Link to='/rooms' className='btn-primary'>
+      <Link to='/rooms' className='btn-primary text-white'>
       Our Rooms</Link>
       </Banner>
   </Hero>
+  <About />
   <Services />
   <FeactureRoom />
    </>

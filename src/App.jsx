@@ -13,6 +13,7 @@ import GallaryPage from './pages/GallaryPage';
 import RestaurantPage from './pages/RestaurantPage'
 
 import Login from './pages/auth/login';
+// import FetchData from './FetchData';
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/rooms/:slug" element={<SingleRoom />} />
           <Route path="/pages/auth/login" element={<Login />} />
         </Routes>
+        {/* <FetchData /> */}
        <Footer />
     </>
   )
