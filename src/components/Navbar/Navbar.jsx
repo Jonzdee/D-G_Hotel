@@ -40,6 +40,9 @@ function Navbar() {
                 <li>
                     <Link to='/contact'>Contact </Link>
                 </li>
+                <li>
+                    <Link to='/MeetingPage'>Meetings </Link>
+                </li>
                 </ul>
             </div>
         </nav>
