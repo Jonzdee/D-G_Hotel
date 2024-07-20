@@ -20,7 +20,10 @@ const FeaturedRoom = () => {
 
   return (
     <section className="featured-rooms">
-      <Title title="featured rooms" />
+      <Title title="Our Rooms" />
+      <h2 className='flex flex-wrap mx-44 mb-3 font-medium '>Kick back in one of 94 modern rooms and suites and catch up on your favorite show with satellite TV channels. 
+        In the morning, you can sip a soothing cup of tea with a room-service breakfast or wake up with fresh coffee from
+         your in-room coffeemaker.</h2>
       <div className="featured-rooms-center">
         {loading ? <Loading /> : roomElements}
       </div>

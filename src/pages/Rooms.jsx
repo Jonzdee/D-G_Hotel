@@ -11,7 +11,7 @@ function Rooms() {
     <>
       <Hero hero='roomsHero'>
         <Banner hero='roomsHero'>
-          <Link to='/' className='btn-primary'>
+          <Link to='/' className='btn-primary text-white'>
           Return Home
           </Link>
         </Banner>

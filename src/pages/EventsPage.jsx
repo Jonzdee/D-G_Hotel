@@ -14,7 +14,7 @@ function GallaryPage() {
           </Link>
         </Banner>
       </Hero>
-      <Gallary />
+        <Gallary />
     </div>
   )
 }

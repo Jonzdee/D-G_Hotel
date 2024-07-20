@@ -44,7 +44,7 @@ const SingleRoom = () => {
 
   return (
     <>
-      <StyledHero img={mainImg || defaultBcgImg}>
+      <StyledHero $img={mainImg || defaultBcgImg}>
         <Banner title={`${name} room`}>
           <Link to="/rooms" className="btn-primary">
             back to rooms
@@ -77,6 +77,7 @@ const SingleRoom = () => {
             <h6>{breakfast && "free breakfast included"}</h6>
           </article>
         </div>
+        
       </section>
 
       <section className="room-extras">

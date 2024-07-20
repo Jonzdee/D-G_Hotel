@@ -5,16 +5,27 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react'
 
 function Navbar() {
+    //change nav color when scrolling
+    const [color, setColor] = useState(false);
+    const changeColor = () =>{
+        if(window.scrollY >= 95) {
+            setColor(true)
+        } else{
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
     const [isOpen, setIsOpen] = useState(false);
     const handleToggle = () => {
         setIsOpen(!isOpen);
       };
     return (
        
-         <nav className='navbar'>
+         <nav className={color ? 'navbar bg-nav text-black' : 'navbar text-white'}>
             <div className='nav-center'>
                 <div className='nav-header'>
-                    <Link to='/'>
+                    <Link to='/' >
                     <h2 className="text-2xl ">D&G Hotel</h2>
                     </Link>
                     <button type='button' className='nav-btn' onClick={handleToggle}>
@@ -26,13 +37,13 @@ function Navbar() {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/rooms'>Rooms</Link>
+                    <Link  to='/rooms' >Rooms</Link>
                 </li>
                 <li>
                     <Link to='/restaurant'>Restaurant</Link>
                 </li>
-                <li>
-                    <Link to='/gallary'>Gallary</Link>
+                <li >
+                    <Link to='/gallary'>Events</Link>
                 </li>
                 <li>
                     <Link to='/rooms'>About</Link>
