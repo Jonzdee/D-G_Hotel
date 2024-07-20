@@ -760,3 +760,21 @@ export default [
     }
   }
 ];
+
+export const about = [
+  {
+    icon: <i class="fa fa-hotel fa-2x text-primary mb-2"></i>,
+    text: "Rooms",
+    count: "7861",
+  },
+  {
+    icon: <i class="fa fa-users fa-2x text-primary mb-2"></i>,
+    text: "Staffs",
+    count: "1234",
+  },
+  {
+    icon: <i class="fa fa-users-cog fa-2x text-primary mb-2"></i>,
+    text: "Clients",
+    count: "4321",
+  },
+];
