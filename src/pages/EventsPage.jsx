@@ -1,10 +1,9 @@
 import React from 'react'
-import Gallary from '../components/gallary/Gallary'
 import Hero from '../components/Hero/Hero';
 import Banner from '../components/banner/Banner';
 import { Link } from'react-router-dom';
 
-function GallaryPage() {
+function EventsPage() {
   return (
     <div>
         <Hero hero='roomsHero'>
@@ -14,9 +13,10 @@ function GallaryPage() {
           </Link>
         </Banner>
       </Hero>
-        <Gallary />
+
+      
     </div>
   )
 }
 
-export default GallaryPage
+export default EventsPage

@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 import Services from "../components/services/Service";
 import FeactureRoom from "../components/FeacturedRoom/FeactureRoom";
 import About from '../components/about/About';
+import Gallery from '../components/gallary/Gallary';
+import FetchData from '../FetchData';
+
+
+
 
 function Home() {
   return  (
@@ -19,8 +24,11 @@ function Home() {
       </Banner>
   </Hero>
   <About />
-  <Services />
+<FetchData />
   <FeactureRoom />
+  <Services />
+  <Gallery />
+ 
    </>
   )
 }
