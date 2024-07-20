@@ -3,9 +3,9 @@ import {  Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import Rooms from './pages/Rooms'
 import SingleRoom from './pages/SingleRoom';
-// import MeetingPage from './pages/MeetingPage';
 import ContactPage from './pages/ContactPage';
-import RestaurantPage from './pages/RestaurantPage'
+import RestaurantPage from './pages/RestaurantPage';
+import MeetingPage from './pages/MeetingPage';
 
 import './App.css';
 
@@ -30,7 +30,7 @@ function App() {
           <Route path="/gallary" element={<GallaryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
-          {/* <Route path="/MeetingPage" element={<MeetingPage />} /> */}
+          <Route path="/MeetingPage" element={<MeetingPage />} />
           <Route path="/single-room" element={<SingleRoom />} />
           <Route path="/rooms/:slug" element={<SingleRoom />} />
           <Route path="/pages/auth/login" element={<Login />} />
