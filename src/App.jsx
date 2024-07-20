@@ -13,15 +13,15 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'
 
 
-import RestaurantPage from './pages/RestaurantPage'
+
 import EventsPage from './pages/EventsPage'
 
 
 import FetchData from './FetchData';
 import RoomDetails from './components/roomdetails/RoomDetails'
 
-import GallaryPage from './pages/GallaryPage';
-import Login from './pages/auth/login';
+// import GallaryPage from './pages/GallaryPage';
+// import Login from './pages/auth/login';
 
 
 
