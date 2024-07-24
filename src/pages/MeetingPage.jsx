@@ -13,7 +13,7 @@ import Why from "../components/Meeting/MeetingWhyChoseUs";
 import CarList from "../components/Meeting/MeetingList";
 import Contact from "../components/Meeting/MeetingContact";
 import Testimonial from "../components/Meeting/MeetingTestimonial";
-import Footer from "../components/Meeting/MeetingFooter";
+// import Footer from "../components/Meeting/MeetingFooter";
 
 const MeetingPage = () => {
   // Dark mode state and effect
@@ -60,7 +60,7 @@ const MeetingPage = () => {
       <CarList />
       <Testimonial />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

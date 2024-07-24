@@ -53,7 +53,7 @@ const MeetingServices = () => {
                   <img src={skill.icon} alt={skill.name} className="text-5xl text-primary group-hover:text-black duration-300" />
                 </div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
-                <p>{skill.description}</p>
+                <p className="text-black">{skill.description}</p>
                 <a
                   href={skill.link}
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
