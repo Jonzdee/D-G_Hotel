@@ -1,13 +1,16 @@
 import React, { Component, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Gallary from '../components/gallary/Gallary'
+import Hero from '../components/Hero/Hero';
+import Banner from '../components/banner/Banner';
+import { Link } from'react-router-dom';
 
 // Component import
-import Hero from "../components/Meeting/MeetingHero";
+import Request from "../components/Meeting/MeetingRequest";
 import About from "../components/Meeting/MeetinAbout";
-import Services from "../components/Meeting/MeetingServices";
+import Why from "../components/Meeting/MeetingWhyChoseUs";
 import CarList from "../components/Meeting/MeetingList";
-import AppStoreBanner from "../components/Meeting/MeetingAppStoreBanner";
 import Contact from "../components/Meeting/MeetingContact";
 import Testimonial from "../components/Meeting/MeetingTestimonial";
 import Footer from "../components/Meeting/MeetingFooter";
@@ -42,12 +45,20 @@ const MeetingPage = () => {
 
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Hero theme={theme} />
+
+<Hero hero='roomsHero'>
+        <Banner hero='roomsHero'>
+          <Link to='/' className='btn-primary'>
+          Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      
+      <Request theme={theme} />
       <About />
-      <Services />
+      <Why />
       <CarList />
       <Testimonial />
-      <AppStoreBanner />
       <Contact />
       <Footer />
     </div>

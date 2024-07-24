@@ -25,16 +25,16 @@ const MeetingTestimonial = () => {
     <>
       <span id="about"></span>
       <div className="dark:bg-black dark:text-white py-14 sm:pb-24">
-        <div className="container">
+        <div className="container mx-auto px-4">
           {/* Header */}
           <div className="space-y-4 pb-12">
             <p
               data-aos="fade-up"
-              className="text-3xl font-semibold text-center sm:text-4xl font-serif"
+              className="text-3xl font-semibold text-black text-center sm:text-4xl font-serif"
             >
-              What Our Clients Say About Us
+              What our client say about D & G meetings and event
             </p>
-            <p data-aos="fade-up" className="text-center sm:px-44">
+            <p data-aos="fade-up" className="text-center text-black sm:px-44">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis iure consectetur tempora amet.
             </p>
@@ -56,8 +56,8 @@ const MeetingTestimonial = () => {
                   />
                 </div>
                 <div className="text-2xl">⭐⭐⭐⭐⭐</div>
-                <p>{skill.description}</p>
-                <p className="text-center font-semibold">{skill.name}</p>
+                <p className="text-black">{skill.description}</p>
+                <p className="text-center text-black font-semibold">{skill.name}</p>
               </div>
             ))}
           </div>
