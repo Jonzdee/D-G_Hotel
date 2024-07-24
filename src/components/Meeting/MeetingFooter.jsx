@@ -1,8 +1,4 @@
 import React from "react";
-import {
-  FaLocationArrow,
-  FaMobileAlt,
-} from "react-icons/fa";
 
 const BootomLinks = [
   {
@@ -22,6 +18,7 @@ const BootomLinks = [
     link: "/#blog",
   },
 ];
+
 const MeetingFooter = () => {
   return (
     <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
@@ -30,7 +27,7 @@ const MeetingFooter = () => {
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
-            NEVER MISS OUT ON OUR MOST POPULAR DEALS
+              NEVER MISS OUT ON OUR MOST POPULAR DEALS
             </h1>
             <p className="text-sm">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
@@ -46,8 +43,11 @@ const MeetingFooter = () => {
                   Important Links
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
-                  {BootomLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
+                  {BootomLinks.map((link, index) => (
+                    <li
+                      key={`important-${index}`}
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200"
+                    >
                       <span>&#11162;</span>
                       <span>{link.title}</span>
                     </li>
@@ -61,8 +61,11 @@ const MeetingFooter = () => {
                   Links
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  {BootomLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
+                  {BootomLinks.map((link, index) => (
+                    <li
+                      key={`links-${index}`}
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200"
+                    >
                       <span>&#11162;</span>
                       <span>{link.title}</span>
                     </li>
@@ -77,8 +80,11 @@ const MeetingFooter = () => {
                 </h1>
                 {/* <ul className="list-disc list-inside"> */}
                 <ul className="flex flex-col gap-3">
-                  {BootomLinks.map((link) => (
-                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200">
+                  {BootomLinks.map((link, index) => (
+                    <li
+                      key={`location-${index}`}
+                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-500 dark:text-gray-200"
+                    >
                       <span>&#11162;</span>
                       <span>{link.title}</span>
                     </li>
