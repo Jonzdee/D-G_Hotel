@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'
-import Rooms from './pages/Rooms'
-import SingleRoom from './pages/SingleRoom';
+import RoomsPage from './pages/RoomsPage'
+// import SingleRoom from './pages/SingleRoom';
 // import MeetingPage from './pages/MeetingPage';
 import ContactPage from './pages/ContactPage';
 import RestaurantPage from './pages/RestaurantPage'
@@ -36,16 +36,16 @@ function App() {
        
         <Routes>
           <Route path="/" element={<Home />} /> 
-          <Route path="/rooms" element={<Rooms />} />
+          <Route path="/rooms" element={<RoomsPage />} />
           <Route path="/gallary" element={<EventsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
           {/* <Route path="/MeetingPage" element={<MeetingPage />} /> */}
-          <Route path="/single-room" element={<SingleRoom />} />
-          <Route path="/rooms/:slug" element={<SingleRoom />} />
+          {/* <Route path="/single-room" element={<SingleRoom />} />
+          <Route path="/rooms/:slug" element={<SingleRoom />} /> */}
           
 
-          <Route path="/" element={<FetchData />} />
+          <Route path="/roomdetails" element={<FetchData />} />
         <Route path="/rooms/:id" element={<RoomDetails />} />
 
          

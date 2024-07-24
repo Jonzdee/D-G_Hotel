@@ -1,9 +1,14 @@
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import CustomImageGallery from './ImageGallery';
+
+import Hero from '../Hero/Hero';
+import Banner from '../banner/Banner';
+import { Link } from 'react-router-dom';
 
 const RoomDetails = () => {
   const { id } = useParams();
@@ -21,7 +26,7 @@ const RoomDetails = () => {
 
   useEffect(() => {
     console.log(`Fetching details for room with id: ${id}`);
-    axios.get(`https://hms-ccny.onrender.com/api/rooms/${id}`)
+    axios.get(`/api/rooms/${id}`)
       .then(res => {
         setRoom(res.data);
         setLoading(false);
@@ -82,16 +87,65 @@ const RoomDetails = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-6 space-y-8">
-      <CustomImageGallery images={[room.asset1, room.asset2, room.asset3, room.asset4]} />
+    <div>
+      <Hero hero='roomsHero'>
+        <Banner hero='roomsHero'>
+          <Link to='/' className='btn-primary'>
+          Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      <div className="max-w-7xl mx-auto p-6 space-y-8">
+      <CustomImageGallery />
       <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">{room.roomType}</h2>
         <p>{room.description}</p>
-        <p className="font-bold">${room.pricePerDay}/night</p>
+        <p className="font-bold">${room.pricePerDay} /nightY</p>
         <button onClick={handleBookNowClick} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105">
           Book Now
         </button>
       </div>
+{/* Hotel Rules */}
+      <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Hotel Rules</h2>
+        <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>No smoking inside the rooms.</li>
+          <li>Pets are not allowed.</li>
+          <li>Check-in time is 3:00 PM and check-out time is 11:00 AM.</li>
+          <li>Quiet hours are from 10:00 PM to 7:00 AM.</li>
+          <li>Only registered guests are allowed in the rooms.</li>
+        </ul>
+      </div>
+
+      {/* Guest Reviews */}
+      <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Guest Reviews</h2>
+        <div className="space-y-6">
+          {/* Sample review */}
+          <div className="border-b pb-4">
+            <h3 className="text-lg font-medium text-gray-900">John Doe</h3>
+            <p className="text-gray-600">“An amazing stay! The suite was perfect, and the service was exceptional. Highly recommended!”</p>
+            <div className="flex space-x-1 mt-2">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+              ))}
+            </div>
+          </div>
+          {/* Another sample review */}
+          <div className="border-b pb-4">
+            <h3 className="text-lg font-medium text-gray-900">Jane Smith</h3>
+            <p className="text-gray-600">“Very comfortable and stylish room. The view was spectacular, and the staff were friendly.”</p>
+            <div className="flex space-x-1 mt-2">
+              {[...Array(4)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+              ))}
+              <svg className="w-5 h-5 text-gray-300 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       {showForm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30 transition-opacity duration-300">
           <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md transform transition-transform duration-300 scale-100 relative">
@@ -148,6 +202,7 @@ const RoomDetails = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

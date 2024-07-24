@@ -52,9 +52,7 @@ const OurServices = () => (
         <div className="container mx-auto">
             <div className="mb-10 text-center">
                 <h2 className="text-3xl font-bold " data-title="Services">Our Services</h2>
-                <div className="mt-2 flex justify-center">
-                    <div className="w-20 h-1 bg-blue-600" />
-                </div>
+                
             </div>
             <div className="flex flex-wrap -mx-4">
                 {services.map((service, index) => (
