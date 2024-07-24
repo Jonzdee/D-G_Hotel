@@ -5,7 +5,8 @@ import RoomsPage from './pages/RoomsPage'
 // import SingleRoom from './pages/SingleRoom';
 // import MeetingPage from './pages/MeetingPage';
 import ContactPage from './pages/ContactPage';
-import RestaurantPage from './pages/RestaurantPage'
+import RestaurantPage from './pages/RestaurantPage';
+import MeetingPage from './pages/MeetingPage';
 
 import './App.css';
 
