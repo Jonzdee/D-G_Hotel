@@ -11,12 +11,12 @@ const About1 = () => {
         <motion.div
           className="w-full h-full bg-cover bg-center"
           style={{
-        //    backgroundImage: ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://dandghotels.com/wp-content/uploads/2023/05/gallery-1-605x465.jpg")',
-        //    backgroundSize: 'cover',
-        //    backgroundPosition: 'center',
-        //    filter: 'blur(1px)', /* Adjust blur radius as needed */
-        //    zIndex: -1 /* Ensure the image stays behind the content */  
-        }}
+            //    backgroundImage: ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://dandghotels.com/wp-content/uploads/2023/05/gallery-1-605x465.jpg")',
+            //    backgroundSize: 'cover',
+            //    backgroundPosition: 'center',
+            //    filter: 'blur(1px)', /* Adjust blur radius as needed */
+            //    zIndex: -1 /* Ensure the image stays behind the content */  
+          }}
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 2.5 }}
@@ -69,7 +69,11 @@ const About1 = () => {
             whileHover={{ scale: 1.05 }}
           >
             <FontAwesomeIcon icon={faHandHoldingHeart} className="text-4xl text-blue-500 mr-4" />
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h4 className="text-xl font-semibold text-gray-800 mb-2">Integrity</h4>
               <p className="text-gray-600">
                 We uphold the highest standards of integrity in all of our actions.
@@ -81,7 +85,11 @@ const About1 = () => {
             whileHover={{ scale: 1.05 }}
           >
             <FontAwesomeIcon icon={faLightbulb} className="text-4xl text-yellow-500 mr-4" />
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h4 className="text-xl font-semibold text-gray-800 mb-2">Innovation</h4>
               <p className="text-gray-600">
                 We foster a culture of creativity and continuous improvement.
@@ -93,7 +101,11 @@ const About1 = () => {
             whileHover={{ scale: 1.05 }}
           >
             <FontAwesomeIcon icon={faMedal} className="text-4xl text-green-500 mr-4" />
-            <div>
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h4 className="text-xl font-semibold text-gray-800 mb-2">Excellence</h4>
               <p className="text-gray-600">
                 We strive for excellence in everything we do.

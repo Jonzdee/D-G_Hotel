@@ -9,27 +9,29 @@ import RestaurantPage from './pages/RestaurantPage';
 import MeetingPage from './pages/MeetingPage';
 
 import './App.css';
-
+// component 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'
-
-
-
 import EventsPage from './pages/EventsPage'
-
-
 import FetchData from './FetchData';
 import RoomDetails from './components/roomdetails/RoomDetails'
 
 // import GallaryPage from './pages/GallaryPage';
 // import Login from './pages/auth/login';
-
+// AOS 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
 
 function App() {
 
+  AOS.init({
+    duration: 1000, // Duration of animations in milliseconds
+    easing: 'ease-in-out', // Easing function for animations
+    once: true, // Whether animations should happen only once
+  });
 
   return (
     <>
@@ -41,7 +43,7 @@ function App() {
           <Route path="/gallary" element={<EventsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
-          {/* <Route path="/MeetingPage" element={<MeetingPage />} /> */}
+          <Route path="/MeetingPage" element={<MeetingPage />} />
           {/* <Route path="/single-room" element={<SingleRoom />} />
           <Route path="/rooms/:slug" element={<SingleRoom />} /> */}
           

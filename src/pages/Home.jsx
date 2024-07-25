@@ -9,14 +9,16 @@ import About from '../components/about/About';
 import Gallery from '../components/gallary/Gallary';
 import FetchData from '../FetchData';
 import About1 from '../components/about/About1';
-import ServiceCarousel from '../components/services/ServiceCarousel';
+import ScrollToTop from '../components/Hero/ScrollToTop';
 
 
 
 
 function Home() {
+  
   return (
     <>
+    <ScrollToTop />
       <Hero>
         <Banner
           title='Your Luxury Hotel For Vacation'
@@ -25,11 +27,12 @@ function Home() {
             Our Rooms</Link>
         </Banner>
       </Hero>
+      
       <About />
       <About1 />
 
       <FetchData />
-      <ServiceCarousel />
+      
       <Services />
       <Gallery />
 

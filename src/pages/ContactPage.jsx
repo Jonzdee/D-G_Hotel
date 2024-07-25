@@ -4,10 +4,12 @@ import { Link } from'react-router-dom'
 import Contact from '../components/contact/Contact'
 import Hero from '../components/Hero/Hero';
 import Banner from '../components/banner/Banner';
+import ScrollToTop from '../components/Hero/ScrollToTop';
 
 function ContactPage() {
   return (
     <div>
+      <ScrollToTop />
       <Hero hero='roomsHero'>
         <Banner hero='roomsHero'>
           <Link to='/' className='btn-primary'>

@@ -36,7 +36,9 @@ const services = [
 ];
 
 const ServiceCard = ({ icon, title, description }) => (
-    <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+    <div 
+    data-aos="zoom-in"
+     className="w-full md:w-1/2 lg:w-1/3 p-4">
         <div className="border border-gray-300 p-6 text-center hover:shadow-lg">
             <div className="text-4xl mb-4">
                 <FontAwesomeIcon icon={['fas', icon]} />
@@ -48,15 +50,16 @@ const ServiceCard = ({ icon, title, description }) => (
 );
 
 const OurServices = () => (
-    <section className="py-20">
+    <section  className="py-20">
         <div className="container mx-auto">
             <div className="mb-10 text-center">
                 <h2 className="text-3xl font-bold " data-title="Services">Our Services</h2>
                 
             </div>
-            <div className="flex flex-wrap -mx-4">
+            <div  className="flex flex-wrap -mx-4">
                 {services.map((service, index) => (
                     <ServiceCard
+                    
                         key={index}
                         icon={service.icon}
                         title={service.title}

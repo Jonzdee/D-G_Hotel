@@ -13,6 +13,7 @@ import Why from "../components/Meeting/MeetingWhyChoseUs";
 import CarList from "../components/Meeting/MeetingList";
 import Contact from "../components/Meeting/MeetingContact";
 import Testimonial from "../components/Meeting/MeetingTestimonial";
+import ScrollToTop from "../components/Hero/ScrollToTop";
 // import Footer from "../components/Meeting/MeetingFooter";
 
 const MeetingPage = () => {
@@ -45,7 +46,7 @@ const MeetingPage = () => {
 
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-
+      <ScrollToTop />
 <Hero hero='roomsHero'>
         <Banner hero='roomsHero'>
           <Link to='/' className='btn-primary'>
@@ -53,7 +54,6 @@ const MeetingPage = () => {
           </Link>
         </Banner>
       </Hero>
-      
       <Request theme={theme} />
       <About />
       <Why />

@@ -1,63 +1,77 @@
-import  {Button, Button1}  from '../../components/smallcomp/Button'
+import { Button, Button1 } from '../../components/smallcomp/Button'
 
 function About() {
-  return (
-    <section className='my-12 py-10 bg-gray-100'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-5 gap-1'>
-            <div className='lg:col-span-2'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl  '>Enjoy the exclusive benefits</h1>
+    return (
+        <section className='my-12 py-10 bg-gray-100'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-5 gap-1'>
+                <div className='lg:col-span-2'>
+                    <h1 className='text-2xl md:text-3xl lg:text-4xl  '>Enjoy the exclusive benefits</h1>
+                </div>
+                <div data-aos="zoom-in"><Button1>DISCOVER MORE BENEFITS</Button1> </div>
+                <div data-aos="zoom-in"><Button>BECOME A MEMBER</Button> </div>
             </div>
-            <div className=''><Button1>DISCOVER MORE BENEFITS</Button1> </div>
-           <div><Button>BECOME A MEMBER</Button> </div>
-        </div>
-        {/*  */}
-        <div className='mx-5 mt-2'>
-        <p className='text-black'>As a D&G Rewards member, you enjoy exclusive benefits. You collect points that you can use to enhance
-                your travel experience or to pay for your booking. join for free and elevate your stay!
-            </p>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-2 mx-6 my-5">
-        <div className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    
-    <a href="#">
-        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Member Only Rate</h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Members get up to 15% discount</p>
-    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
-        See our guideline
-        
-    </a>
-</div>
+            {/*  */}
+            <div className='mx-5 mt-2'>
+                <p className='text-black'>As a D&G Rewards member, you enjoy exclusive benefits. You collect points that you can use to enhance
+                    your travel experience or to pay for your booking. join for free and elevate your stay!
+                </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-2 mx-6 my-5">
+                <div
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                    className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                    <a href="#">
+                        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Member Only Rate</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Members get up to 15% discount</p>
+                    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
+                        See our guideline
+
+                    </a>
+                </div>
 
 
-<div className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-   
-    <a href="#">
-        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Discount on Food and Beverages</h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Discount on food and beverages</p>
-    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
-        See our guideline
-        
-    </a>
-</div>
+                <div 
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+
+                className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                    <a href="#">
+                        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Discount on Food and Beverages</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Discount on food and beverages</p>
+                    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
+                        See our guideline
+
+                    </a>
+                </div>
 
 
-<div className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    
-    <a href="#">
-        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Priority Line</h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Save waiting time with access to priority line</p>
-    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
-        See our guideline
-        
-    </a>
-</div>
-  
-</div>
-    </section>
-  )
+                <div 
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                
+                className="max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                    <a href="#">
+                        <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Priority Line</h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Save waiting time with access to priority line</p>
+                    <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
+                        See our guideline
+
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    )
 }
 
 export default About
@@ -124,45 +138,45 @@ export default About
 //       {/* Image Gallery */}
 //       <CustomImageGallery />
 
-    //   {/* Hotel Rules */}
-    //   <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-    //     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Hotel Rules</h2>
-    //     <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
-    //       <li>No smoking inside the rooms.</li>
-    //       <li>Pets are not allowed.</li>
-    //       <li>Check-in time is 3:00 PM and check-out time is 11:00 AM.</li>
-    //       <li>Quiet hours are from 10:00 PM to 7:00 AM.</li>
-    //       <li>Only registered guests are allowed in the rooms.</li>
-    //     </ul>
-    //   </div>
+//   {/* Hotel Rules */}
+//   <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+//     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Hotel Rules</h2>
+//     <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+//       <li>No smoking inside the rooms.</li>
+//       <li>Pets are not allowed.</li>
+//       <li>Check-in time is 3:00 PM and check-out time is 11:00 AM.</li>
+//       <li>Quiet hours are from 10:00 PM to 7:00 AM.</li>
+//       <li>Only registered guests are allowed in the rooms.</li>
+//     </ul>
+//   </div>
 
-    //   {/* Guest Reviews */}
-    //   <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-    //     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Guest Reviews</h2>
-    //     <div className="space-y-6">
-    //       {/* Sample review */}
-    //       <div className="border-b pb-4">
-    //         <h3 className="text-lg font-medium text-gray-900">John Doe</h3>
-    //         <p className="text-gray-600">“An amazing stay! The suite was perfect, and the service was exceptional. Highly recommended!”</p>
-    //         <div className="flex space-x-1 mt-2">
-    //           {[...Array(5)].map((_, i) => (
-    //             <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
-    //           ))}
-    //         </div>
-    //       </div>
-    //       {/* Another sample review */}
-    //       <div className="border-b pb-4">
-    //         <h3 className="text-lg font-medium text-gray-900">Jane Smith</h3>
-    //         <p className="text-gray-600">“Very comfortable and stylish room. The view was spectacular, and the staff were friendly.”</p>
-    //         <div className="flex space-x-1 mt-2">
-    //           {[...Array(4)].map((_, i) => (
-    //             <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
-    //           ))}
-    //           <svg className="w-5 h-5 text-gray-300 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
+//   {/* Guest Reviews */}
+//   <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
+//     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Guest Reviews</h2>
+//     <div className="space-y-6">
+//       {/* Sample review */}
+//       <div className="border-b pb-4">
+//         <h3 className="text-lg font-medium text-gray-900">John Doe</h3>
+//         <p className="text-gray-600">“An amazing stay! The suite was perfect, and the service was exceptional. Highly recommended!”</p>
+//         <div className="flex space-x-1 mt-2">
+//           {[...Array(5)].map((_, i) => (
+//             <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+//           ))}
+//         </div>
+//       </div>
+//       {/* Another sample review */}
+//       <div className="border-b pb-4">
+//         <h3 className="text-lg font-medium text-gray-900">Jane Smith</h3>
+//         <p className="text-gray-600">“Very comfortable and stylish room. The view was spectacular, and the staff were friendly.”</p>
+//         <div className="flex space-x-1 mt-2">
+//           {[...Array(4)].map((_, i) => (
+//             <svg key={i} className="w-5 h-5 text-yellow-400 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+//           ))}
+//           <svg className="w-5 h-5 text-gray-300 transition-transform transform duration-300 hover:scale-125" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-3.5 2.1L7 12 4 8.5l3.9-.4L10 2l2.1 5.7L16 8.5 12 12l.5 5.1L10 15z"/></svg>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
 
 //       {/* Booking Form Modal */}
 //       {showForm && (

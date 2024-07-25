@@ -8,7 +8,7 @@ const MeetingHero = ({ theme }) => {
   });
 
   return (
-    <div className="dark:bg-black dark:text-white duration-300 min-h-screen flex items-center justify-center">
+    <div className="dark:bg-black dark:text-white duration-300  flex items-center justify-center">
       <div className="container mx-auto flex items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-10">
           <div

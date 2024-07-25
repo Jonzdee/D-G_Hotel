@@ -43,7 +43,7 @@ function Navbar() {
                     <Link to='/restaurant'>Restaurant</Link>
                 </li>
                 <li >
-                    <Link to='/gallary'>Events</Link>
+                    <Link to='/gallary'>Gallery</Link>
                 </li>
                 <li>
                     <Link to='/rooms'>About</Link>
