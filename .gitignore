@@ -7,8 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-.env
-=======
+
 node_modules
 dist
 dist-ssr
@@ -17,9 +16,9 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-<<<<<<< HEAD
 
-=======
+
+
 .idea
 .DS_Store
 *.suo
@@ -27,4 +26,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# .gitignore
 .env
