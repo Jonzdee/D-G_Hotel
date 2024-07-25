@@ -163,7 +163,7 @@ h6 {
 .defaultHero,
   .roomsHero {
     min-height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url("./images/defaultBcg.png");
+    background:linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)), url("./images/homebg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ h6 {
     justify-content: center;
   }
   .roomsHero {
-    background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url("./images/room-2.png");
+    background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url("./images/roombg.JPGgit ");
     min-height: 60vh;
   }
   /* End of Hero */
