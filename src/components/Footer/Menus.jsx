@@ -10,7 +10,7 @@ export const COMPANY = [
     { name: "ABOUT", link: "#" },
     { name: "GALLERY", link: "#" },
     { name: "BLOG", link: "#" },
-    { name: "CONTACT US", link: "#" },
+    { name: "CONTACT US", link: "/contact" },
     { name: "FAQ", link: "#" },
   ];
   export const PRODUCTS = [
@@ -24,7 +24,7 @@ export const COMPANY = [
     { name: "location Lagos", link: "#" },
     { name: "d&ghotel@gmail.com", link: "#" },
     { name: "(+234) 912-3456-073", link: "#" },
-    { name: "(+0091) 912-3456-084", link: "#" },
+    { name: "(+234) 812-3456-073", link: "#" },
   ];
   
   export const Icons = [

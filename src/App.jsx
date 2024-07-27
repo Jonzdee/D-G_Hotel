@@ -15,10 +15,8 @@ import Footer from './components/Footer/Footer'
 import EventsPage from './pages/EventsPage'
 import FetchData from './FetchData';
 import RoomDetails from './components/roomdetails/RoomDetails'
+import AboutUsPage from './pages/AboutUsPage'
 
-// import GallaryPage from './pages/GallaryPage';
-// import Login from './pages/auth/login';
-// AOS 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -44,8 +42,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/restaurant" element={<RestaurantPage />} />
           <Route path="/MeetingPage" element={<MeetingPage />} />
-          {/* <Route path="/single-room" element={<SingleRoom />} />
-          <Route path="/rooms/:slug" element={<SingleRoom />} /> */}
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          
           
 
           <Route path="/roomdetails" element={<FetchData />} />

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../images/logo.svg'
+import favicon from '../../images/favicon.png'
 import { FaAlignRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
@@ -26,7 +26,10 @@ function Navbar() {
             <div className='nav-center'>
                 <div className='nav-header'>
                     <Link to='/' >
-                    <h2 className="text-2xl ">D&G Hotel</h2>
+                    <img src={favicon} alt="logo" 
+                    className="w-10 h-4 sm:w-24 sm:h-4 lg:w-12 lg:h-12 mx-auto sm:mx-0"
+                data-aos="fade-up"
+                    />
                     </Link>
                     <button type='button' className='nav-btn' onClick={handleToggle}>
                         <FaAlignRight className='nav-icon'/>
@@ -46,7 +49,7 @@ function Navbar() {
                     <Link to='/gallary'>Gallery</Link>
                 </li>
                 <li>
-                    <Link to='/rooms'>About</Link>
+                    <Link to='/aboutus'>About</Link>
                 </li>
                 <li>
                     <Link to='/contact'>Contact </Link>

@@ -37,10 +37,10 @@ const services = [
 
 const ServiceCard = ({ icon, title, description }) => (
     <div 
-    data-aos="zoom-in"
+    
      className="w-full md:w-1/2 lg:w-1/3 p-4">
         <div className="border border-gray-300 p-6 text-center hover:shadow-lg">
-            <div className="text-4xl mb-4">
+            <div className="text-4xl mb-4 ">
                 <FontAwesomeIcon icon={['fas', icon]} />
             </div>
             <h4 className="text-xl font-semibold mb-2">{title}</h4>

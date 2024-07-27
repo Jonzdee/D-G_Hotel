@@ -1,7 +1,7 @@
 import React from "react";
-import pic1 from "./images/eventShow-1.jpg";
-import pic2 from "./images/eventShow-2.jpg"; // Ensure this is the correct image path
-import pic3 from "./images/eventShow-3.jpg"; // Ensure this is the correct image path
+import pic1 from "./images/eventShow1.jpg";
+import pic2 from "./images/eventShow2.jpg"; // Ensure this is the correct image path
+import pic3 from "./images/eventShow3.jpg"; // Ensure this is the correct image path
 
 const skillsData = [
   {
@@ -52,7 +52,7 @@ const MeetingServices = () => {
                 <div className="grid place-items-center">
                   <img src={skill.icon} alt={skill.name} className="text-5xl text-primary group-hover:text-black duration-300" />
                 </div>
-                <h1 className="text-2xl font-bold">{skill.name}</h1>
+                <h1 className="text-2xl font-bold text-black">{skill.name}</h1>
                 <p className="text-black">{skill.description}</p>
                 <a
                   href={skill.link}

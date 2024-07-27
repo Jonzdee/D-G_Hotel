@@ -60,7 +60,22 @@ function FetchData() {
   };
 
   if (loading) {
-    return <div className='flex justify-center items-center h-screen'>loading...</div>;
+    return <div className='flex justify-center items-center h-screen'>
+      <div class="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+</div>
+
+
+    </div>;
   }
 
   if (error) {
