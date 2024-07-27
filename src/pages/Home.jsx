@@ -4,10 +4,9 @@ import Banner from '../components/banner/Banner';
 import { Link } from 'react-router-dom';
 // imports components
 import Services from "../components/services/Service";
-// import FeactureRoom from "../components/FeacturedRoom/FeactureRoom";
 import About from '../components/about/About';
 import Gallery from '../components/gallary/Gallary';
-import FetchData from '../FetchData';
+import FetchData from '../components/roomdetails/FetchData';
 import About1 from '../components/about/About1';
 import ScrollToTop from '../components/Hero/ScrollToTop';
 

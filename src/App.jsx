@@ -13,7 +13,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'
 import EventsPage from './pages/EventsPage'
-import FetchData from './FetchData';
+import FetchData from './components/roomdetails/FetchData';
 import RoomDetails from './components/roomdetails/RoomDetails'
 import AboutUsPage from './pages/AboutUsPage'
 

@@ -27,7 +27,7 @@ function Navbar() {
                 <div className='nav-header'>
                     <Link to='/' >
                     <img src={favicon} alt="logo" 
-                    className="w-10 h-4 sm:w-24 sm:h-4 lg:w-12 lg:h-12 mx-auto sm:mx-0"
+                    className="w-12 h-12 sm:w-12 sm:h-12 lg:w-12 lg:h-12 mx-auto sm:mx-0"
                 data-aos="fade-up"
                     />
                     </Link>
