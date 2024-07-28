@@ -12,7 +12,7 @@ const MeetinAbout = () => {
   width="100%" 
   height="auto" 
   className="sm:w-[558px] sm:h-[526px] sm:scale-125 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)] my-5"
-  src="https://drive.google.com/file/d/1cz6XuCNdShcKrJ-KftCgVWUvbIz_WnVi/preview" 
+  src="https://drive.google.com/file/d/1R3NQztnfIZqAOm9El8rY34L5qJk27gMZ/preview" 
   title="D&amp;G Hotels" 
   frameBorder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 

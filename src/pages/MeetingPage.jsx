@@ -14,6 +14,7 @@ import CarList from "../components/Meeting/MeetingList";
 import Contact from "../components/Meeting/MeetingContact";
 import Testimonial from "../components/Meeting/MeetingTestimonial";
 import ScrollToTop from "../components/Hero/ScrollToTop";
+import Experience from '../components/Meeting/MeetingExperience'
 // import Footer from "../components/Meeting/MeetingFooter";
 
 const MeetingPage = () => {
@@ -57,6 +58,7 @@ const MeetingPage = () => {
       <Request theme={theme} />
       <About />
       <Why />
+      <Experience />
       <CarList />
       <Testimonial />
       <Contact />

@@ -1,5 +1,5 @@
 import React from 'react'
-import Rooms from '../components/roomdetails/Rooms';
+import Rooms from '../components/rooms/Rooms';
 import Hero from '../components/Hero/Hero';
 import Banner from '../components/banner/Banner';
 import { Link } from 'react-router-dom'

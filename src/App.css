@@ -176,40 +176,55 @@ h6 {
 }
 /* end of globals */
 /* Navbar */
+/* Navbar styles */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: transparent;
   z-index: 1;
+  transition: background-color 0.3s, color 0.3s;
 }
-.bg-nav{
+
+.bg-nav {
   background-color: var(--offWhite);
-  
 }
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
+
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: blue;
+  
 }
+
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
+
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -219,13 +234,15 @@ h6 {
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
 }
+
 .nav-links a:hover {
   color: var(--primaryColor);
 }
 
 .show-nav {
-  height: 330px;
+  height: 350px;
 }
+
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
@@ -245,6 +262,21 @@ h6 {
     padding: 0.5rem 0;
   }
 }
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #ffffff; /* Default color for mobile */
+  }
+  .bg-nav {
+    background-color: #ffffff; /* Change to the desired color for scrolled state on mobile */
+  }
+  .nav-links {
+    display: block;
+  }
+}
+
+
 /* end of navbar */
 /* Hero */
 .defaultHero,
@@ -634,4 +666,72 @@ p {
   -moz-transition: var(--mainTransition);
   -ms-transition: var(--mainTransition);
   -o-transition: var(--mainTransition);
+}
+
+/* restaurant diches pop up card  */
+/* Example CSS */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 16px;
+  color: #888;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.close-btn {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

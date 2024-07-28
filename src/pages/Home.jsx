@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import Services from "../components/services/Service";
 import About from '../components/about/About';
 import Gallery from '../components/gallary/Gallary';
-import FetchData from '../components/roomdetails/FetchData';
+import FetchData from '../components/rooms/FetchData';
 import About1 from '../components/about/About1';
 import ScrollToTop from '../components/Hero/ScrollToTop';
 
@@ -34,6 +34,7 @@ function Home() {
       
       <Services />
       <Gallery />
+
 
     </>
   )

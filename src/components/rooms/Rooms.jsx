@@ -61,7 +61,7 @@ function FetchData() {
   };
 
   if (loading) {
-    return <div className='flex justify-center items-center h-screen'><div class="spinner">
+    return <div className='flex justify-center items-center h-screen'><div className="spinner">
     <div></div>   
     <div></div>    
     <div></div>    
@@ -247,3 +247,9 @@ function FetchData() {
 }
 
 export default FetchData;
+
+
+
+
+
+
