@@ -61,7 +61,8 @@ function FetchData() {
   };
 
   if (loading) {
-    return <div className='flex justify-center items-center h-screen'><div className="spinner">
+    return <div className='flex justify-center items-center h-screen'>
+      <div className="spinner">
     <div></div>   
     <div></div>    
     <div></div>    
@@ -73,7 +74,6 @@ function FetchData() {
     <div></div>    
     <div></div>    
   </div>
-  
   </div>;
   }
 

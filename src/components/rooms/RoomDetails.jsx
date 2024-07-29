@@ -5,6 +5,8 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import Hero from '../Hero/Hero';
 import Banner from '../banner/Banner';
+// scroll to up 
+import ScrollToTop from '../Hero/ScrollToTop';
 
 const RoomDetails = () => {
   const { id } = useParams();
@@ -20,14 +22,29 @@ const RoomDetails = () => {
     const fetchRoomDetails = async () => {
       try {
         console.log(`Fetching details for room with id: ${id}`);
-        const response = await axios.get(`${import.meta.env.VITE_API_KEY}${id}`);
-        console.log('Room data:', response.data);
-        setRoom(response.data);
+        const response = await axios.get(import.meta.env.VITE_API_KEY);
+        const rooms = response.data;
+        // Acess the data from the response 
+        const room = rooms.find((room)=> room.id === parseInt(id));
+        // find the specific room
+        if (room){
+          console.log(room);
+          setRoom(room);
+          // set the specific room details 
+        }else{
+          console.log(`Room with ID ${id} not found`);
+          setRoom(null);
+          // Optional: Clear the room state if not found
+        }
         setLoading(false);
+        //Set loading to fasle after data fetching
+      
+        
       } catch (err) {
         console.error('Error fetching room details:', err);
         setError('Error fetching room details');
         setLoading(false);
+        //set loading to false in case of an error
       }
     };
 
@@ -71,7 +88,21 @@ const RoomDetails = () => {
   };
 
   if (loading) {
-    return <div className='flex justify-center items-center h-screen'>Loading...</div>;
+    return <div className='flex justify-center items-center h-screen'>
+    <div className="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+</div>
+</div>;
+    
   }
 
   if (error) {
@@ -84,16 +115,17 @@ const RoomDetails = () => {
 
   return (
     <div>
+      <ScrollToTop />
       <Hero hero='roomsHero'>
         <Banner hero='roomsHero'>
           <Link to='/' className='btn-primary'>
-            Return Home
+            Room Details
           </Link>
         </Banner>
       </Hero>
       <div className="max-w-7xl mx-auto p-6 space-y-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {['Asset1', 'Asset2', 'Asset3', 'Asset4'].map((asset, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {['asset1', 'asset2', 'asset3', 'asset4'].map((asset, index) => (
             room[asset] ? (
               <img
                 key={index}
@@ -109,9 +141,9 @@ const RoomDetails = () => {
           ))}
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">{room.roomType}</h2>
-          <p>{room.description}</p>
-          <p className="font-bold">&#8358;{room.pricePerDay} /night</p>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">{room.roomType}</h2>
+          <p className='text-gray-800'>{room.description}</p>
+          <p className="font-bold text-gray-800 mb-2">&#8358;{room.pricePerDay} /night</p>
           <button
             onClick={handleBookNowClick}
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-transform duration-300 ease-in-out transform hover:scale-105"
