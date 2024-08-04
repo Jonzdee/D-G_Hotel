@@ -189,7 +189,7 @@ const RoomDetails = () => {
     Swal.fire({
       icon: 'error',
       title: 'Booking Failed',
-      text: 'Failed to confirm booking. Please try again.',
+      text: 'Room is not available for this category at the moment ',
     });
   }
 };
