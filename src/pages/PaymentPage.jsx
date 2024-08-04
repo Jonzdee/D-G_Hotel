@@ -20,7 +20,7 @@ const PaymentPage = () => {
   };
 
   return (
-    <div className="payment-page my-24">
+    <div className="payment-page my-24 h-100">
       <h1>Payment Page</h1>
       <button onClick={handlePayment} className="btn-primary">
         Pay Now
