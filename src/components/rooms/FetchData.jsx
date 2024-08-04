@@ -91,13 +91,13 @@ function FetchData() {
           rooms.map(room => (
             <div key={room.id} className="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md">
               <Slider {...settings}>
-                <img src={room.asset1} alt={room.roomType} className="w-full h-56 object-cover" />
-                <img src={room.asset2} alt={room.roomType} className="w-full h-56 object-cover" />
-                <img src={room.asset3} alt={room.roomType} className="w-full h-56 object-cover" />
-                <img src={room.asset4} alt={room.roomType} className="w-full h-56 object-cover" />
+                <img src={room.asset1} alt={room.categoryType} className="w-full h-56 object-cover" />
+                <img src={room.asset2} alt={room.categoryType} className="w-full h-56 object-cover" />
+                <img src={room.asset3} alt={room.categoryType} className="w-full h-56 object-cover" />
+                <img src={room.asset4} alt={room.categoryType} className="w-full h-56 object-cover" />
               </Slider>
               <div className="p-4">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{room.roomType}</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{room.categoryType}</h2>
                 <div className="flex flex-wrap items-center mb-4">
                   <span className="bg-gray-200 text-gray-800 text-sm px-2 py-1 mr-2 rounded">{room.size} m²</span>
                   <span className="bg-gray-200 text-gray-800 text-sm px-2 py-1 mr-2 rounded">{room.adults} adults</span>
