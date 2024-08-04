@@ -158,7 +158,7 @@ const RoomDetails = () => {
         // Show success alert with payment button
         Swal.fire({
           icon: 'success',
-          title: 'Make Payment',
+          title: 'Make Payme',
           text: 'Please complete your payment to proceed further.',
           showConfirmButton: true,
           confirmButtonText: 'Proceed to Payment',
