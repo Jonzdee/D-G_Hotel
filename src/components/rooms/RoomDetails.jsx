@@ -107,13 +107,14 @@ const RoomDetails = () => {
 
     console.log('Availability response:', availabilityResponse.data); // Debugging line
 
-    // Log the exact response to understand the structure
-    if (!availabilityResponse.data || typeof availabilityResponse.data.available === 'undefined') {
-      console.error('Unexpected API response structure:', availabilityResponse.data);
-      throw new Error('Unexpected API response structure');
-    }
+    // Determine room availability based on the response
+    const responseData = availabilityResponse.data;
 
-    const isAvailable = availabilityResponse.data.available; // Adjust based on your actual API response field
+    // Check if the response matches the requested data
+    const isAvailable = 
+      responseData.checkInDate === formattedCheckInDate &&
+      responseData.checkOutDate === formattedCheckOutDate &&
+      responseData.category === parseInt(id);
 
     if (isAvailable) {
       // Room is available, show success alert and proceed with booking
@@ -192,6 +193,7 @@ const RoomDetails = () => {
     });
   }
 };
+
 
   // const payWithPaystack = () => {
   //   const handler = PaystackPop.setup({
