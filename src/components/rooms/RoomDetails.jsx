@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Hero from "../Hero/Hero";
 import Banner from "../banner/Banner";
+import { useNavigate } from 'react-router-dom';
 import ScrollToTop from "../Hero/ScrollToTop";
 import { format } from "date-fns";
 import Swal from 'sweetalert2';
@@ -21,6 +22,7 @@ const RoomDetails = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchRoomDetails = async () => {
@@ -153,6 +155,25 @@ const RoomDetails = () => {
         );
         console.log("Booking info submitted successfully:", bookingInfoResponse.data);
 
+        // Show success alert with payment button
+        Swal.fire({
+          icon: 'success',
+          title: 'Room Confirmed',
+          text: 'Please complete your payment to proceed further.',
+          showConfirmButton: true,
+          confirmButtonText: 'Proceed to Payment',
+          preConfirm: () => {
+            // Redirect to payment page
+            navigate('/payment', {
+              state: {
+                checkInDate: formattedCheckInDate,
+                checkOutDate: formattedCheckOutDate,
+                totalAmount: parseFloat(totalAmount),
+              },
+            });
+          }
+        });
+
         // Clear form fields
         setName("");
         setEmail("");
@@ -161,13 +182,6 @@ const RoomDetails = () => {
         setCheckOutDate(null);
         setNumNights(0);
         setTotalAmount(0);
-
-        // Show success alert
-        Swal.fire({
-          icon: 'success',
-          title: 'Booking Confirmed',
-          text: 'Please complete your payment to proceed further.',
-        });
       });
     } else {
       // Room is not available, show error alert
@@ -189,7 +203,7 @@ const RoomDetails = () => {
     Swal.fire({
       icon: 'error',
       title: 'Booking Failed',
-      text: 'Room is not available for this category at the moment ',
+      text: 'Room is not available for this category for the selected dates.',
     });
   }
 };
